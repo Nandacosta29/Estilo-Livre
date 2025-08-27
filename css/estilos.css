@@ -1,0 +1,158 @@
+/* ===== ESTILO LIVRE - SALÃO DE BELEZA ===== */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #faf7fb;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(90deg, #b37edc, #6f2dbd);
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff !important;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffe6f7 !important;
+  }
+  
+  /* Sessão Home */
+  #home {
+    background: linear-gradient(rgba(111, 45, 189, 0.7), rgba(179, 126, 220, 0.7)),
+                url("../fotos/logo.png") center/cover no-repeat;
+    color: white;
+    padding: 6rem 2rem;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  #home .btn-primary {
+    background-color: #b37edc;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  #home .btn-primary:hover {
+    background-color: #6f2dbd;
+  }
+  
+  /* Seções gerais */
+  section {
+    padding: 4rem 0;
+  }
+  
+  h2 {
+    font-weight: 600;
+    color: #6f2dbd;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  /* ===== Cards de serviços ===== */
+  .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* 🔹 VERSÃO PADRÃO (retângulos do mesmo tamanho) */
+  .card-img-top {
+    height: 250px;        /* mesma altura */
+    object-fit: cover;    /* corta proporcionalmente */
+    width: 100%;          /* ocupa largura total */
+    border-radius: 8px;   /* cantos arredondados */
+  }
+  
+  /* 🔹 VERSÃO OPCIONAL (circular, se quiser testar)
+  .card-img-top {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 50%;   /* deixa redonda */
+    margin: 0 auto;       /* centraliza */
+    display: block;
+  }
+  */
+  
+  .card-title {
+    color: #6f2dbd;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Depoimentos */
+  #depoimentos {
+    background-color: #fdf5ff;
+  }
+  
+  .carousel-item p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .carousel-item small {
+    display: block;
+    margin-top: 0.5rem;
+    color: #6f2dbd;
+    font-weight: bold;
+  }
+  
+  /* Contato */
+  #contato {
+    background: linear-gradient(90deg, #6f2dbd, #b37edc);
+    color: white;
+  }
+  
+  #contato .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  #contato .btn-primary {
+    background-color: #ffe6f7;
+    color: #6f2dbd;
+    border: none;
+    font-weight: bold;
+  }
+  
+  #contato .btn-primary:hover {
+    background-color: #fff;
+    color: #6f2dbd;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #4a166e;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  

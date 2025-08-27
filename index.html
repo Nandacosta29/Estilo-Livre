@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estilo Livre - Barbearia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- 🔹 NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="fotos/logo.png" alt="Estilo Livre" width="100"> Estilo Livre
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 🔹 HOME -->
+  <section id="home" class="bg-dark text-light text-center p-5">
+    <div class="container">
+      <h1 class="display-4">Estilo Livre</h1>
+      <p class="lead">Seu estilo, sua liberdade.</p>
+      <a href="#contato" class="btn btn-primary btn-lg">Agende seu horário</a>
+    </div>
+  </section>
+
+  <!-- 🔹 SOBRE NÓS -->
+  <section id="sobre" class="p-5">
+    <div class="container">
+      <h2 class="text-center">Sobre Nós</h2>
+      <p class="text-center">Na Estilo Livre, valorizamos sua identidade e oferecemos cortes e cuidados personalizados para realçar seu estilo. Profissionais qualificados, ambiente acolhedor e atendimento de excelência para você se sentir em casa.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 SERVIÇOS -->
+  <section id="servicos" class="p-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="fotos/corta.jpg" class="card-img-top" alt="Corte de cabelo">
+            <div class="card-body">
+              <h5 class="card-title">Corte de Cabelo</h5>
+              <p class="card-text">Dos estilos clássicos aos modernos, cuidamos do seu visual com precisão e estilo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="fotos/barba.jpeg" class="card-img-top" alt="Barba">
+            <div class="card-body">
+              <h5 class="card-title">Barba</h5>
+              <p class="card-text">Modelagem, alinhamento e cuidado para manter sua barba impecável.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="fotos/hidratacao.jpeg" class="card-img-top" alt="Hidratação" width = "60" >
+            <div class="card-body">
+              <h5 class="card-title">Hidratação</h5>
+              <p class="card-text">Tratamentos capilares para brilho, força e saúde dos fios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 DEPOIMENTOS -->
+  <section id="depoimentos" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">O que dizem nossos clientes</h2>
+      <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <p class="lead">"Atendimento excelente e corte perfeito! Super recomendo."</p>
+            <small>- João Silva</small>
+          </div>
+          <div class="carousel-item">
+            <p class="lead">"Ambiente acolhedor e profissionais incríveis. Nota 10!"</p>
+            <small>- Ana Lima</small>
+          </div>
+          <div class="carousel-item">
+            <p class="lead">"Minha barba nunca esteve tão bem cuidada. Obrigado!"</p>
+            <small>- Pedro Souza</small>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 CONTATO -->
+  <section id="contato" class="p-5 bg-dark text-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Entre em Contato</h2>
+      <form class="w-75 mx-auto">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🔹 RODAPÉ -->
+  <footer class="text-center p-3 bg-dark text-light">
+    <p>© 2025 Estilo Livre - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
